@@ -75,6 +75,7 @@ def walk_dogs
   		 end
   		 animals.clear
   		end
+      binding.pry
   	end
 
 
