@@ -66,13 +66,13 @@ def walk_dogs
   end
 
   def sell_pets
-    pets.each do |pet, arr|
-      arr.each do |pet|
-        pet.mood = "nervous"
-      end
-      arr.clear
-    end
-  end
+  		pets.each do |species, animals|
+  		 animals.each do |animal|
+  		 	animal.mood = "nervous"
+  		 end
+  		 animals.clear
+  		end
+  	end
 
 
 end
