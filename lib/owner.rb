@@ -70,9 +70,9 @@ def walk_dogs
   def sell_pets
   		pets.each do |species, animals|
   		 animals.each do |animal|
-         binding.pry
   		 	animal.mood = "nervous"
   		 end
+        binding.pry
   		 animals.clear
   		end
   	end
