@@ -31,7 +31,7 @@ class Owner
    end
 
    def pets
-     @@pets
+     @pets
    end
 
 def buy_fish(fish)
@@ -47,19 +47,19 @@ def buy_cat(cat)
 end
 
 def walk_dogs
-  @@pets[:dogs].each do |dog|
+  @pets[:dogs].each do |dog|
     dog.mood = "happy"
    end
  end
 
   def play_with_cats
-    @@pets[:cats].each do |cat|
+    @pets[:cats].each do |cat|
       cat.mood = "happy"
     end
   end
 
   def feed_fish
-    @@pets[:fishes].each do |fish|
+    @pets[:fishes].each do |fish|
       fish.mood = "happy"
     end
   end
@@ -69,14 +69,14 @@ def walk_dogs
   end
 
   def sell_pets
-    binding.pry
+    #binding.pry
   		pets.each do |species, animals|
   		 animals.each do |animal|
   		 	animal.mood = "nervous"
   		 end
   		 animals.clear
   		end
-      binding.pry
+      #binding.pry
   	end
 
 
