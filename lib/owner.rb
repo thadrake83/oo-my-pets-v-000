@@ -68,7 +68,7 @@ def walk_dogs
   end
 
   def sell_pets
-    #binding.pry
+    binding.pry
   		pets.each do |species, animals|
   		 animals.each do |animal|
   		 	animal.mood = "nervous"
